@@ -28,19 +28,16 @@
                             bryce.me
                         </a>
                     </p>
-                    <p class="info-divider">//</p>
                     <p>
                         <a href="http://github.com/bryce-evans" target="_blank">
                             github.com/bryce-evans
                         </a>
                     </p>
-                    <p class="info-divider">//</p>
                     <p>
                         <a class="plain" href="tel:+12064969903">
                             206.496.9903
                         </a>
                     </p>
-                    <p class="info-divider">//</p>
                     <p>
                         <a class="plain print-alt-link" href="mailto:Bryce Evans <bae43@cornell.edu>" target="_blank">
                             bae43@cornell.edu
@@ -55,14 +52,70 @@
     <div class="main-container">
         <div class="main wrapper clearfix">
             <div class="right-container">
+                <!-- <div class="two-col"> -->
+                    <div id="education">
+                        <div>
+                            <h2>Education</h2>
+                        </div>
+                        <section class="list">
+                            <section>
+                                <h3>
+                                    <a href="http://www.cornell.edu" target="_blank">Cornell University</a>
+                                </h3>
+                                <div>
+                                    <p>M.Eng. Computer Science</p>
+                                    <time>2016</time>
+                                </div>
+                                <div>
+                                    <p>B.S. Computer Science</p>
+                                    <time>2015</time>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div id="skills">
+                        <div>
+                            <h2>Skills</h2>
+                        </div>
+                        <section class="list">
+                            <section>
+                                <section class="section">
+                                    <h3>Languages</h3>
+                                    <p>C/C++ • Python</p>
+                                </section>
+                                <section class="section">
+                                    <h3> Tools </h3>
+                                    <p>PyTorch • TensorFlow</p>
+                                </section>
+                            </section>
+                        </section>
+                    </div>
+                <!-- </div> -->
                 <div id="experience">
                     <div>
                         <h2>Experience</h2>
                     </div>
                     <section class="list">
                         <section>
+                            <h3><a href="http://www.verily.com" target="_blank">Verily</a></h3>
+                            <time>2021 - present</time>
+                            <p><i>Sr. ML Software Engineer, Surgical Devices</i></p>
+                            <p>Architected ML infrastructure for real-time surgical devices.</p>
+                            <p>
+                                Cholecystectomy (Gallbladder Removal)
+                                <ul class="indent">
+                                    <li>Reduced model runtime by 40% or more, enabling lower latency and higher
+                                        framerate.</li>
+                                    <li>Proactively de-risked new models, hardware for product specifications.</li>
+                                    <li>Guided model development to </li>
+                                    <li>Co-authored MICCAI 2022 paper on noisy annotations for Cholecystectomy</li>
+                                </ul>
+                            </p>
+
+                        </section>
+                        <section class="">
                             <h3><a href="http://www.getcruise.com" target="_blank">Cruise</a></h3>
-                            <time>2019 - present</time>
+                            <time>2019 - 2021</time>
                             <p><i>Machine Learning Engineer, Vision</i></p>
                             <p>End to end model training, optimization, validation, and deployment.</p>
                             <p>Long-Range Detection Model
@@ -73,19 +126,18 @@
                                         object
                                         detection. </li>
                                     <li>Increased mAP 24% over production 2D detection model baseline. </li>
-                                    <!-- Directed future investments for simulated data and sensor hardware. <br> -->
                                     <li>Model consolidated multiple production models for easier maintenance and
                                         higher performance. </li>
                                 </ul>
                             </p>
                             <p class="">
-                                Vision Downstream Utility Efforts
+                                End-to-End Perception
                                 <br>
                                 <ul class="indent">
-                                    <li>Identified low utility of vision outputs as major bottleneck; investigated downstream systems to identify causes.</li>
-                                    <li>Created a system of forwarding covariance matrices and confidences based on
-                                        historical statistics.</li>
-                                    <li>Tripled downstream vision consumption, cutting class-label error in half.</li>
+                                    <li>Initiated efforts to improve vision end-to-end impact on driving downstream.
+                                    </li>
+                                    <li>Cut class-label error in half.
+                                    </li>
                                     <li>Retrained prediction models on new vision data to solve four separate safety
                                         scenarios.</li>
                                 </ul>
@@ -98,20 +150,17 @@
                             <p>Appearance Association<br>
                                 <ul class="indent">
                                     <li>Developed a mulit-class embedding model for detection association.</li>
-                                    <!-- Created annotation tools, performed validation, profiling, and metrics.<br> -->
-                                    <li>Increased mAP over 20% and resolved situations of pedestrian tracking at night.
+                                    <li>Increased mAP over 20% and resolved situations of pedestrian tracking at
+                                        night.
                                     </li>
-                                    <!-- <li>Patent Pending: "Tracking Objects Using Sensor Data Segmentations and/or
-                                        Representations"</li> -->
                                 </ul>
                             </p>
                             <p>
                                 <div class="">
                                     Vision Infrastructure<br>
                                     <ul class="indent">
-                                        <li>Re-built image pipeline with AVX, TBB, and HEVC for 2x throughput, decrease
-                                            file
-                                            size by 40%.</li>
+                                        <li>Re-built image pipeline with AVX, TBB, and HEVC for 2x throughput;
+                                            decreased file size by 40%.</li>
                                         <li>Built annotation tools and managed 180 annotators to label millions of
                                             images.</li>
                                     </ul>
@@ -119,23 +168,17 @@
                             </p>
                         </section>
                         <section>
-                            <h3><a href="http://www.research.facebook.com" target="_blank">Facebook Research</a></h3>
+                            <h3><a href="http://www.research.facebook.com" target="_blank">Facebook Research</a>
+                            </h3>
                             <time>2016 - 2017</time>
                             <p><i>Software Engineer, Computational Photography</i></p>
                             <p>
                                 Video Capture for VR Applications<br>
                                 <ul class="indent">
-                                    <li>Primary implementer of exploratory work for Stereo-360 Capture, resulting in a Siggraph paper and patent.</li>
-                                    <!-- <li>Co-authored "Low-Cost 360 Stereo Photography and Video Capture," Siggraph 2017
-                                    </li>
-                                    <li>Co-authored US20180007344: "Stereoscopic Image Capture"</li> -->
+                                    <li>Primary implementer of exploratory work for Stereo-360 Capture, resulting in
+                                        a Siggraph paper and patent.</li>
                                 </ul>
                             </p>
-                            <!-- <time class="">2014, 2015</time>
-                            <p class=""><i>Software Engineering Intern<span class="no-print"></i></p>
-                            <p class="">
-                                Release Engineering, Language Technology
-                            </p> -->
                         </section>
                         <section class="hidden">
                             <h3><a href="https://www.crunchbase.com/organization/taggpic" target="_blank">TaggPic</a>
@@ -146,7 +189,8 @@
                                 Designed and implemented a web application for a computer vision based
                                 start-up <span>(6th Employee)</span>.<br>
                                 <ul class="indent">
-                                    <li>Co-authored US9418482: "Discovering visited travel destinations from a set of
+                                    <li>Co-authored US9418482: "Discovering visited travel destinations from a set
+                                        of
                                         digital images."
                                     </li>
                                     <li>TaggPic Inc. acquired by Google, January 2014.</li>
@@ -163,20 +207,27 @@
                     <section class="list">
                         <section>
                             <p>
-                                <p><strong>Journals</strong></p>
+                                <p><strong>Journals & Conferences</strong></p>
                                 <ul class="indent">
-                                    <li>
-                                        Matzen, Kevin, Michael F. Cohen, <strong>Bryce Evans</strong>, Johannes Kopf,
-                                        and Richard Szeliski. "Low-cost 360 stereo<br><span style="margin-left: 1.5em;">photography and video capture." ACM
+                                    <li class="hanging-indent">
+                                        Leifman, George, Tomer Golany, <strong>Bryce Evans</strong>, and Ehud
+                                        Rivlin. "Critical View of Safety Estimation based on
+                                        Noisy Annotations." In: Medical Image Computing and Computer Assisted
+                                        Intervention (MICCAI). (2022).</span>
+                                    </li>
+                                    <li class="hanging-indent">
+                                        Matzen, Kevin, Michael F. Cohen, <strong>Bryce Evans</strong>, Johannes
+                                        Kopf,
+                                        and Richard Szeliski. "Low-cost 360 stereo photography and video capture."
+                                        ACM
                                         Transactions on Graphics (TOG) 36, no. 4 (2017): 1-12.</span>
                                     </li>
                                 </ul>
                                 <p><strong>Patents</strong></p>
                                 <ul class="indent">
                                     <li>"Improved Camera Based 3D Object Detection Using High Resolution
-                                        Maps" (Pending)</li>
-                                    <li>"Tracking Objects Using Sensor Data Segmentations and/or
-                                        Representations" (Pending)</li>
+                                        Maps" (US20220414387)</li>
+                                    <li>"Image Embedding for Object Tracking" (US11430225)</li>
                                     <li>"Stereoscopic Image Capture" (US20180007344)</li>
                                     <li>"Discovering visited travel destinations from a set of
                                         digital images." (US9418482)
@@ -187,98 +238,8 @@
                         </section>
                     </section>
                 </div>
-
-                <article class="three-col">
-                    <section id="education" class="list">
-                        <div class="side-label-container">
-                            <div class="rotated-sidebar">
-                                <h2>Education</h2>
-                            </div>
-                        </div>
-                        <section>
-                            <h3>
-                                <a href="http://www.cornell.edu" target="_blank">Cornell University</a>
-                            </h3>
-                            <div>
-                                <p>M.Eng. Computer Science</p>
-                                <time>2016</time>
-                            </div>
-                            <div>
-                                <p>B.S. Computer Science</p>
-                                <time>2015</time>
-                            </div>
-                        </section>
-                    </section>
-                    <section id="skills" class="list no-desc">
-                        <div class="side-label-container">
-                            <div class="rotated-sidebar">
-                                <h2>Skills</h2>
-                            </div>
-                        </div>
-                        <section class="section">
-                            <h3>Languages</h3>
-                            <p>C/C++ • Python</p>
-                        </section>
-                        <section class="section">
-                            <h3> Tools </h3>
-                            <p>PyTorch • TensorFlow</p>
-                        </section>
-
-                    </section>
-                    <section id="language" class="list no-desc">
-                        <div class="side-label-container">
-                            <div class="rotated-sidebar">
-                                <h2>Language</h2>
-                            </div>
-                        </div>
-                        <section class="section">
-                            <h3>Mandarin</h3>
-                            <p>
-                                Conversational<br> HSK4 Equivalent<br>
-
-                                </span>
-                            </p>
-                        </section>
-                    </section>
-                </article>
-
-
-                <div id="other" class="">
-
-                    <div>
-                        <h2> Photography </h2>
-                    </div>
-                    <section class="list">
-                        <section>
-                            <h3>
-                                <a href="http://bryce.photo/" target="_blank">Bryce Evans Photography</a>
-                            </h3>
-                            <time>2013 - present</time>
-                            <p><i>Professional Freelance Photographer</i></p>
-                            <p>
-                                Portrait and event photography. Portfolio available at <strong><a
-                                    href="http://bryce.photo" target="_blank">bryce.photo</a></strong>
-                            </p>
-                        </section>
-
-                        <section class="hidden">
-                            <h3>
-                                <a href="http://acsu.cornell.edu/" target="_blank">Association of Computer Science
-                                    Undergraduates</a>
-                            </h3>
-                            <time>2014 - 2015 (3 semesters)</time>
-                            <p><i>Student - Faculty Relations Officer</i></p>
-                            <p>
-                                Represented student concerns to faculty. Organized recruiting events and student
-                                workshops.
-                                Creator and manager of Q&amp;A page with over 900+ active students and faculty.
-                            </p>
-                        </section>
-                    </section>
-                </div>
-
             </div>
-            <div class="updated-date">Updated June 2021</div>
+            <div class="updated-date">Updated Jan 2023</div>
         </div>
     </div>
 </body>
