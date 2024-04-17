@@ -12,6 +12,7 @@
  new-navy-teal-bright: (10, 100, 150)
  * */
 
+ 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @font-face {
@@ -19,6 +20,34 @@
     src: url('/fonts/zona/zona-extrabold.otf') format('opentype');
     font-weight: 900;
 }
+
+ @property --link-hover-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #00e89d;
+  }
+
+  @property --primary-color-dark {
+    syntax: "<color>";
+    inherits: false;
+    /* initial-value: rgb(10, 92, 200); */
+    initial-value: rgb(1, 112, 202);
+  }
+
+  @property --primary-color-light {
+    syntax: "<color>";
+    inherits: false;
+    /* initial-value: rgb(0,120,240); */
+    initial-value: rgb(1, 137, 216);
+  }
+  
+  @property --sidebar-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: rgb(10,107,180);
+  }
+  
+
 
 article,
 aside,
@@ -61,12 +90,7 @@ html {
 
 }
 
-a:active,
-a:hover {
-    outline: 0;
-    color: #0090C0;
-}
- 
+
 h1 {
     font-size: 2em
 }
@@ -124,7 +148,8 @@ a:active,
 a:focus,
 a:hover,
 a:visited:hover {
-    color: #00a2d2;
+    outline: 0;
+    color: var(--link-hover-color);
 }
 
 aside a {
@@ -275,7 +300,10 @@ ul li::before {
     min-width: 2em;
     margin-left: -1.5em;
     position: absolute;
-    margin-top: 1px;
+    margin-top: 3px;
+
+    /* Custom colors to overide the default blue. Generated with https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: brightness(0) saturate(100%) invert(69%) sepia(99%) saturate(2024%) hue-rotate(110deg) brightness(99%) contrast(101%);
 }
 
 
@@ -404,7 +432,7 @@ header .title {
 }
 
 header .subtitle {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 12pt;
     margin-bottom: 1em;
 }
@@ -503,7 +531,7 @@ abbr[title]:after {
     width: 0;
     padding: 0;
     margin: 0;
-    border-left: 2px solid #006B93;
+    border-left: 2px solid var(--sidebar-color);
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
     white-space: nowrap;
     -webkit-transform: rotate(-90deg) translate(44px, 26px);
@@ -520,7 +548,7 @@ abbr[title]:after {
     color: white;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.00) 50%, 0, transparent 100%),
-        linear-gradient(-144deg, rgb(0, 98, 136), #0090C0);
+        linear-gradient(-144deg, var(--primary-color-dark), var(--primary-color-light));
     /* text-transform: uppercase; */
     line-height: 1em;
     font-weight: 500;
@@ -540,7 +568,7 @@ abbr[title]:after {
 
 .right-container>div {
     clear: both;
-    border-left: 2px #006B93 solid;
+    border-left: 2px var(--sidebar-color) solid;
 }
 
 .right-container h2 {
@@ -548,7 +576,7 @@ abbr[title]:after {
     background-size: .5em .5em, 100% 100%;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.00) 50%, 0, transparent 100%),
-        linear-gradient(-183deg, rgb(0, 98, 136), #0090C0);
+        linear-gradient(-183deg, var(--primary-color-dark), var(--primary-color-light));
     font-weight: 500;
     /* text-transform: uppercase; */
     line-height: 1em;
@@ -691,7 +719,6 @@ a[href^="#"]:after {
         overflow: hidden;
     }
 
-
     * {
         box-shadow: none !important;
         text-shadow: none !important;
@@ -823,7 +850,7 @@ a[href^="#"]:after {
         width: 0;
         padding: 0;
         margin: 0;
-        border-left: 2px solid #006B93;
+        border-left: 2px solid var(--sidebar-color);
     }
 
     .updated-date {
