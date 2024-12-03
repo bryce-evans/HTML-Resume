@@ -24,27 +24,27 @@
  @property --link-hover-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: rgb(0, 232, 157);
+    initial-value: rgb(134, 185, 0);
   }
 
   @property --primary-color-dark {
     syntax: "<color>";
     inherits: false;
     /* initial-value: rgb(10, 92, 200); */
-    initial-value: rgb(0, 98, 136);
+    initial-value: rgb(0, 0, 0);
   }
 
   @property --primary-color-light {
     syntax: "<color>";
     inherits: false;
     /* initial-value: rgb(0,120,240); */
-    initial-value: rgb(0, 144, 192);
+    initial-value: rgb(66, 66, 66);
   }
   
   @property --sidebar-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: rgb(0, 107, 147);
+    initial-value: rgb(18, 18, 18);
   }
   
 
@@ -303,7 +303,7 @@ ul li::before {
     margin-top: 3px;
 
     /* Custom colors to overide the default blue. Generated with https://isotropic.co/tool/hex-color-to-css-filter/ */
-    /* filter: brightness(0) saturate(100%) invert(69%) sepia(99%) saturate(2024%) hue-rotate(110deg) brightness(99%) contrast(101%); */
+    filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(2563%) hue-rotate(37deg) brightness(96%) contrast(101%);;
 }
 
 .updated-date {
