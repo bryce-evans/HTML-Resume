@@ -3,7 +3,6 @@
    ================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 :root {
     --color-primary: #0090C0;
     --color-primary-dark: rgb(0, 98, 136);
@@ -320,7 +319,7 @@ ul li::before {
     min-width: 2em;
     margin-left: -1.5em;
     position: absolute;
-    margin-top: 1px;
+    margin-top: 4px;
 }
 
 .list section {
@@ -396,13 +395,11 @@ ul li::before {
     aside {
         max-width: 100%;
     }
-
     aside>p {
         font-size: 11pt;
         line-height: 1.5em;
         margin: 0;
     }
-
     #education,
     #skills {
         height: 22ex;
@@ -419,68 +416,54 @@ ul li::before {
         background-color: var(--color-bg);
         background-image: none;
     }
-
     body {
         height: 11in;
         overflow: hidden;
     }
-
     * {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     .no-print,
     .no-print * {
         display: none !important;
     }
-
     aside>p {
         line-height: 1.2em;
     }
-
     header>.aside-container {
         margin-top: 14px;
     }
-
     .subtitle {
         margin: 0;
     }
-
     .main.clearfix {
         margin-bottom: 0em;
         margin-top: 2mm;
     }
-
     .list section {
         padding-bottom: 0.25em;
         margin-left: 0em;
         font-size: 11px;
     }
-
     #publications .list section {
         margin-top: 2ex;
     }
-
     .list section h3 {
         font-size: 12pt;
     }
-
     ul li::before {
         font-size: 8px;
         margin-top: 2px;
     }
-
     .indent {
         margin: 0 0 0 1.1em;
     }
-
     .right-container h2 {
         margin-bottom: .25em;
         padding-left: .75em;
         font-size: 12pt;
     }
-
     .updated-date {
         padding: 0;
         float: right;
@@ -488,7 +471,6 @@ ul li::before {
         position: relative;
         font-size: 9px;
     }
-
     #education,
     #skills {
         height: 15ex;
