@@ -409,7 +409,20 @@ ul li::before {
     }
     #education,
     #skills {
-        height: 22ex;
+        height: auto;
+    }
+    #skills .section {
+        margin-left: 0 !important;
+        margin-bottom: 0;
+    }
+
+    #skills .section h3 {
+        display: inline-block;
+    }
+
+    #skills .section p {
+        display: inline-block;
+        margin: 10px 0 0 10px;
     }
 }
 
