@@ -326,7 +326,7 @@ ul li::before {
     min-width: 2em;
     margin-left: -1.5em;
     position: absolute;
-    margin-top: 1px;
+    margin-top: 3px;
 }
 
 .list section {
