@@ -412,14 +412,12 @@ ul li::before {
         height: auto;
     }
     #skills .section {
-        margin-left: 0 !important;
+        margin-left: 0;
         margin-bottom: 0;
     }
-
     #skills .section h3 {
         display: inline-block;
     }
-
     #skills .section p {
         display: inline-block;
         margin: 10px 0 0 10px;
@@ -435,24 +433,36 @@ ul li::before {
     html {
         background-color: var(--color-bg);
         background-image: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color-adjust: exact;
     }
     body {
         height: 11in;
         overflow: hidden;
     }
     * {
-        box-shadow: none !important;
-        text-shadow: none !important;
+        box-shadow: none;
+        text-shadow: none;
     }
     .no-print,
     .no-print * {
-        display: none !important;
+        display: none;
+    }
+    .right-container h2 {
+        color: white;
+        background: var(--color-primary-dark);
+        background-color: var(--color-primary-dark);
+        background-image: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color-adjust: exact;
     }
     aside>p {
         line-height: 1.2em;
     }
     header>.aside-container {
-        margin-top: 14px;
+        margin-top: 3ex;
     }
     .subtitle {
         margin: 0;
