@@ -252,7 +252,7 @@ aside a {
 }
 
 aside>p {
-    font-size: 9pt;
+    font-size: 10pt;
     line-height: 1.4em;
     margin: 0 auto;
     display: block;
@@ -403,7 +403,6 @@ ul li::before {
         max-width: 100%;
     }
     aside>p {
-        font-size: 11pt;
         line-height: 1.5em;
         margin: 0;
     }
@@ -412,11 +411,14 @@ ul li::before {
         height: auto;
     }
     #skills .section {
-        margin-left: 0;
+        float: none !important;
+        margin-left: 0 !important;
         margin-bottom: 0;
+        width: 100%;
     }
     #skills .section h3 {
         display: inline-block;
+        margin-left: 0;
     }
     #skills .section p {
         display: inline-block;
