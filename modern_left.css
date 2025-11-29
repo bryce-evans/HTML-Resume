@@ -474,6 +474,9 @@ ul li::before {
         display: inline-block;
         margin: 10px 0 0 10px;
     }
+    #skill .section>.section>.section {
+        margin-top: 2px;
+    }
 }
 
 
