@@ -2,20 +2,28 @@
 
 A repo for building resumes using HTML.
 
-HTML is a powerful tool for resumes that offers lots of features more popular tools lack:
-* Web-first: Have you resume be web-native to be viewable on a website without complications of PDF.
-* Responsive: Allows styles to be dynamic, so that info can be viewable on desktop and mobile (again, no nasty zooming for PDFs).
-* Source Controlled: Allow quick diffs and tracking over time. LaTeX also offers this, but lacks all the other points listed here.
-* Detailed, Controlled Styles: Quick and easy formatting, with cascading styles. No more fighting LaTeX defaults, inching text pixel by pixel with `\vspace{0.1em}` everywhere.
-* Image support: Word and InDesign duplicate images repeatedly. LaTeX has lots of packages that do this but there is dispute between `\usepackage{svg}`, `epsfig`, `epstopdf`, `graphicx` setup, each with its own tradeoffs. There isn't a standard method and support rises and falls over time. Web tools like html have unparalleled LTS with the largest community backing. 
+Main features:
+* Responsive: page scales to all screen sizes.
+* Absolute control: unique styles for desktop, mobile, and printing.
+* Encrypted Contact info: Have contact info part of your resume without web scrapers spamming you later.
 
+### Why HTML?
 
-## Styles
+HTML is a powerful tool for resumes with an advanced set of features not seen in any other option.
+* Web-first: Viewable - and editable - in any browser without complications of PDF. You can have navigation back buttons too!
+* Responsive: Styles are dynamic, so content always fits the screen.
+* Source Controlled: Allows quick diffs and tracking over time. 
 
-Over time, styles have changed from serif to sans fonts, two-col to single column, and darker more formal design to brighter coloars. See `old_templates` for a variety of options.
+* Customizable <i>and</i> readable: Quick and easy formatting, with cascading styles. 
+* Unparalleled LTS: Web has impossible to beat community backing with longer term support than any community (or even corporate) project can guarantee
+* Correct Instancing: HTML references source images correctly, whereas Word, InDesign, and others create unique copies. This matters when updating custom bullet SVGs - no updating 20 separate copies.
+* LaTeX is painful: Despite its popularity in academia, LaTeX is arguably a terrible choice here.
+  - Package support makes things difficult to port.
+  - Disputes between which package to use for images, e.g. `\usepackage{svg}`, `epsfig`, `epstopdf`, `graphicx` further complicate setup.
+  - Every resume I've seen fights with the LaTeX defaults, inching text pixel by pixel with `\vspace{0.1em}` everywhere.
+  - Challenging rotated text. LaTeX doesn't have a concept of heirarchical absolute vs relative positioning, so rotated vertical text either locks to one page position (therefore needing updates when text shifts), or locks to the text near it but needs lots of updating styles for other text blocks to move around it.
 
-
-## Tool Comparison
+#### Tool Comparison
 As a quick summary, HTML offers all of the options needed for modern resumes, whereas other tools lack:
 | Tool             | Cost      | Source Control|  Web Support  | Mobile Scaling  | Run Offline w/o Installation | Styling              |
 | --------         | -------   | :-------:     |  -------      | :-------:       | :-------:                    |:-------              |
@@ -25,5 +33,5 @@ As a quick summary, HTML offers all of the options needed for modern resumes, wh
 | HTML             | ✅free    | ✅           | ✅native      | ✅             | ✅                           |high-control code    | 
 
 
-> [!NOTE]  
-> As an example of "control" for styling, consider the case of creating text, background highlighted with small fixed padding amount, rotated 90 degrees, positioned so that it doesn't affect styling for surrounding text. This is difficult to do in Word or LaTeX. Floating shapes with padded text are well supported in other tools.
+## Styles
+Over time, styles have changed from serif to sans fonts, two-col to single column, and darker more formal design to brighter colors. See `old_templates` for a variety of options.
