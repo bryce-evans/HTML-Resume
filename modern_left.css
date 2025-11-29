@@ -231,6 +231,7 @@ header .subtitle {
 
 .subtitle {
     margin: 0;
+    max-width: calc(100% - 120px);
 }
 
 header p {
@@ -399,6 +400,17 @@ ul li::before {
 /* ================================
    MEDIA QUERIES - MOBILE
    ================================ */
+
+@media only screen and (max-width: 520px) {
+    #education,
+    #skills {
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-right: 0;
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 720px) {
     aside {
