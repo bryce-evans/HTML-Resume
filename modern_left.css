@@ -337,12 +337,21 @@ aside>p>a {
     float: right;
 }
 
+#skills .list {
+    padding-bottom: 0.5ex;
+}
+
 #skills .list section {
-    margin-left: 0.5em;
+    padding-bottom: 0.25ex;
+}
+
+#languages {
+    float: left;
 }
 
 #tools {
-    margin-left: 6v
+    float: left;
+    margin-left: calc(2em + 4vw);
 }
 
 
