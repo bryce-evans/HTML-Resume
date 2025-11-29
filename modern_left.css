@@ -460,11 +460,13 @@ ul li::before {
     #skills {
         height: auto;
     }
-    #skills .section {
+    #skills .section,
+    #tools {
         float: none !important;
         margin-left: 0 !important;
         margin-bottom: 0;
         width: 100%;
+        display: block !important;
     }
     #skills .section h3 {
         display: inline-block;
@@ -473,9 +475,6 @@ ul li::before {
     #skills .section p {
         display: inline-block;
         margin: 10px 0 0 10px;
-    }
-    #skill .section>.section>.section {
-        margin-top: 2px;
     }
 }
 
