@@ -75,11 +75,11 @@
                         <section>
                             <section id="languages" class="section">
                                 <h3>Languages</h3>
-                                <p>C/C++ • Python</p>
+                                <p>Python • C/C++</p>
                             </section>
                             <section id="tools" class="section">
                                 <h3> Tools </h3>
-                                <p>PyTorch • TensorFlow</p>
+                                <p>PyTorch • TensorRT • UV • Docker </p>
                             </section>
                         </section>
                     </section>
@@ -90,12 +90,36 @@
                     </div>
                     <section class="list">
                         <section>
-                            <h3><a href="http://www.verily.com" target="_blank">Verily</a></h3>
+                            <h3><a href="https://www.adobe.com" target="_blank">Adobe</a></h3>
+                            <time>2024 - present</time>
+                            <p><i>Sr. Machine Learning Software Engineer, 3D & Video</i></p>
+                           
+                            <p>3D Reconstruction Tech Lead
+                                <br>
+                            </p>
+                            <p>
+                                <ul class="indent">
+                                    <li>Tech lead for a team of 4 engineers, managing architecture, design, & technical direction.</li>
+                                    <li>Built out backend, UV + Docker build, CI, metrics DB, and prototype cloud deployment and web app.</li>
+                                    <li>Managed two <a href="https://new.express.adobe.com/webpage/bTQSgi9he46st">Adobe Stock Missions</a>, gathering 10s of thousands of high-res assets for model training.</li>
+                                    <li>Ran user studies for 19 enterprise partners. Continued partnerships/contracts in progress.</li>
+                                </ul>
+                            </p>
+                            <p>Video Upscale
+                                <br>
+                            </p>
+                            <p>
+                                <ul class="indent">
+                                    <li>Developed a new on-device video upscale model. Built out metrics for experimentation, ran experiments with data balancing.</li>
+                                    <li>Best model against competitors: PIQE 5.1 improvement over DaVinci Resolve, 4.3 over Topaz. User preferred in 73% of cases.</li>
+                                    <li>Optimized model for CoreML, TensorRT. Reimplemented problematic layers and quantized for 40%+ improvement in inference time.</li>
+                                </ul>
+                            </p>
+                        </section>
+                        <section>
+                            <h3><a href="https://www.verily.com" target="_blank">Verily</a></h3>
                             <time>2021 - 2023</time>
                             <p><i>Sr. Machine Learning Software Engineer, Surgical Devices</i></p>
-                            <p>Designed and built ML infrastructure for real-time surgical devices.
-                                <br> Lead 0 to 1 efforts for early stage projects with agile deployment of new features for clinical trails.
-                            </p>
                             <p>
                                 <ul class="indent">
                                     <li>Used TensorRT, CUDA to reduce runtimes 22%-40% in several models for cholecystectomy (gallbladder removal) and colonoscopy.</li>
@@ -103,52 +127,35 @@
                                     <li>Developed benchmarks and model understanding tools to de-risk deployment and catch issues before launch.
                                         <br>e.g. model extremely dependent on certain (less significant) features; many false positive detections when scope out of body.
                                     </li>
-                                    <li>Co-authored MICCAI 2022 paper on handling noisy annotations in surgical data.</li>
                                 </ul>
                             </p>
                         </section>
                         <section class="">
-                            <h3><a href="http://www.getcruise.com" target="_blank">Cruise</a></h3>
+                            <h3><a href="https://www.getcruise.com" target="_blank">Cruise</a></h3>
                             <time>2019 - 2021</time>
                             <p><i>Machine Learning Engineer, Vision</i></p>
-                            <p>End to end model training, optimization, validation, and deployment.
+                            <p>
                                 <ul class="indent">
-                                    <li>Trained and validated a state-of-the-art multi-modal model for long-range 3D object detection.
-                                    </li>
-                                    <li>Increased mAP 24% over production 2D detection model baseline.</li>
+                                    <li>Trained SoTA 3D object detection model. Increased mAP 24% over production 2D detection model baseline.</li>
                                     <li>Additional heads consolidated multiple production models for easier maintenance and lower overall latency.
                                     </li>
-                                </ul>
-                            </p>
-                            <p>
-                                End-to-End Perception
-                                <ul class="indent">
-                                    <li>Identified and documented bottleneck areas downstream that limited Perception impact on end-to-end driving.
-                                    </li>
-                                    <li>Developed system forwarding statistics and confidences. Class-label error reduced 45%, Distant object recall up 30%.
-                                    </li>
-                                    <li>Retrained Prediction models on updated Perception model outputs to solve four separate safety scenarios.
+                                    <li>Identified downstream bottlenecks; retrained models. Class-label error reduced 45%, Distant object recall up 30%.
                                     </li>
                                 </ul>
                             </p>
                         </section>
                         <section>
-                            <h3><a href="http://www.zoox.com" target="_blank">Zoox</a></h3>
+                            <h3><a href="https://www.zoox.com" target="_blank">Zoox</a></h3>
                             <time>2017 - 2019</time>
-                            <p><i>Research Engineer, Vision</i></p>
-                            <p>Object Re-ID and Production Vision Infrastructure<br>
+                            <p><i>Research Engineer, Vision</i></p> 
                                 <ul class="indent">
-                                    <li>Trained, validated, deployed a multi-class embedding model for object tracking, fully replacing existing system.
-                                        <li>Increased mAP by over 20% to greatly improve confidence tracking pedestrians and enable night driving in busy scenes.
-                                        </li>
-                                    </li>
-                                    <li>Sole implementor of two web-based video annotation tools. Managed 180 annotators to label millions of images for multiple tasks.</li>
-                                    <li>Re-built on-vehicle image pipeline with AVX, TBB, and HEVC for 2x throughput; decreased file size by 40%.</li>
+                                    <li>Trained, validated, deployed a multi-class embedding model. Increased mAP by over 20%, enabled night driving in busy scenes.
+                                    <li>Re-built on-vehicle image pipeline with AVX, TBB, and HEVC for 2x throughput.</li>
                                 </ul>
                             </p>
                         </section>
                         <section>
-                            <h3><a href="http://www.research.facebook.com" target="_blank">Facebook Research</a>
+                            <h3><a href="https://www.research.facebook.com" target="_blank">Facebook Research</a>
                             </h3>
                             <time>2016 - 2017</time>
                             <p><i>Software Engineer, Computational Photography</i></p>
@@ -193,10 +200,11 @@
                     </section>
                 </div>
             </div>
-            <div class="updated-date">Updated 2024</div>
+            <div class="updated-date">Updated Dec. 2025</div>
         </div>
     </div>
     <script src="./encrypt_info.js"></script>
+    <script src="./default_filename_on_save.js"></script>
 </body>
 
 </html>

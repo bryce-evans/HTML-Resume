@@ -343,15 +343,16 @@ aside>p>a {
 
 #skills .list section {
     padding-bottom: 0.25ex;
+    margin-left: 0.5em;
 }
 
 #languages {
     float: left;
 }
 
-#tools {
+#skills #tools {
     float: left;
-    margin-left: calc(2em + 4vw);
+    margin-left: 2.5em;
 }
 
 
@@ -446,7 +447,7 @@ ul li::before {
    MEDIA QUERIES - MOBILE
    ================================ */
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 600px) {
     #education,
     #skills {
         width: 100%;
@@ -457,7 +458,7 @@ ul li::before {
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 780px) {
     aside {
         max-width: 100%;
     }
@@ -520,6 +521,7 @@ ul li::before {
         color-adjust: exact;
     }
     aside>p {
+        font-size: 9pt;
         line-height: 1.2em;
     }
     header>.aside-container {
